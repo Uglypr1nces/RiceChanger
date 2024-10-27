@@ -1,0 +1,37 @@
+/* This is a CSS made for testing purposes */
+
+/* Base styling */
+body {
+    background-color: #ffffff; /* Default light background */
+    color: #333333; /* Text color */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Theme-specific elements */
+.header {
+    background-color: #FF5733; /* Primary color */
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.button {
+    background-color: #FF5733; /* Button background */
+    color: #ffffff; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #45a049; /* Hover effect */
+}
+
+.footer {
+    background-color: #f1f1f1;
+    color: #333333;
+    padding: 10px;
+    text-align: center;
+}
