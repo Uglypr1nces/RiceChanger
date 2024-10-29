@@ -24,7 +24,13 @@ def get_vscode_path():
     else:
         return None
 
-        
+def get_wallpaper_engine_path():
+    file_path = f"C:/Program Files (x86)/Steam/steamapps/common/wallpaper_engine/wallpaper.exe"
+    if os.path.exists(file_path):
+        return file_path
+    else:
+        return None
+
 def get_vencord_path():
     pass
 
