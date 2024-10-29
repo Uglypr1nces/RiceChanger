@@ -20,6 +20,7 @@ def get_yasb_path():
 def get_vscode_path():
     file_path = f"C:/Users/{get_user_name()}/AppData/Roaming/Code/User/settings.json"
     if os.path.exists(file_path):
+        print(file_path)
         return file_path
     else:
         return None

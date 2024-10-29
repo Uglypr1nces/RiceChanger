@@ -35,6 +35,35 @@ def change_advanced_json(path, nested_key, value):
     except Exception as e:
         print(e)
 
+
+def change_vs_code_json(path, nested_key, value):
+    try:
+        # Open the JSON file and load the data
+        with open(path, "r") as f:
+            data = json.load(f)
+        
+        # Navigate to the nested key and change its value
+        keys = nested_key.split('.')
+        temp = data
+        for key in keys[:-1]:  # Traverse to the second last key
+            if key not in temp:
+                temp[key] = {}  # Create a new dictionary if key is missing
+            temp = temp[key]
+        
+        temp[keys[-1]] = value  # Update the last key with the new value
+
+        # Write back to the file
+        with open(path, "w") as f:
+            json.dump(data, f, indent=4)
+        
+        print("JSON edited successfully")
+    except KeyError as e:
+        print(f"KeyError: The key '{e}' does not exist.")
+    except json.JSONDecodeError:
+        print("Error: JSON file is not properly formatted.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
 def change_css(path, new_value):
     try:
         with open(path, "w") as f:
