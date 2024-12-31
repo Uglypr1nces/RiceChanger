@@ -1,12 +1,10 @@
+# Rice Changer for Windows
+
+Welcome to Rice, a project where you can customize your development environment to your liking!
+
 ## Features
 
-change komorebi border color
-change yasb colors
-change vencord colors
-change vscode theme
-change windows theme
-
-## Problems
-
-changing css value is annoying
-you need the correct vs codes installed
+- Change the border color of Komorebi
+- Customize the colors of Yasb
+- Modify the theme of Visual Studio Code
+- Change Wallpaper Engine Wallpaper

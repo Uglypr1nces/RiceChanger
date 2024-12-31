@@ -48,9 +48,8 @@ if __name__ == "__main__":
     print("\n")   
 
     for theme in themes:
-        sleep(0.3)
-        print(theme.get_theme_name()) 
-
+        sleep(0.1)
+        print(f"{themes.index(theme) + 1}: {theme.get_theme_name()}") 
     print("\n")   
     chosen_theme = input("Choose a theme: ")
 
